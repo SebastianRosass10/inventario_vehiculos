@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Evita desplazamientos de scroll */
+}
+
+.diagonal-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom left, #f2611d 50%, transparent 50%);
+    z-index: -1; /* Coloca el fondo detrás del contenido */
+}
+
+.image-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/maquinarescate.png); /* Ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    z-index: -2;
+}
+
+.container {
+    text-align: center;
+    padding: 40px;
+    position: relative;
+    z-index: 1; /* Asegura que el contenido esté encima del fondo */
+    margin-top: 100px; /* Baja el contenido para que quede más centrado */
+}
+
+h1 {
+    color: #333;
+    font-size: 4em;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-bottom: 40px;
+}
+
+/* Resto de estilos de tus opciones */
+.option-grid {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    margin-top: 30px; /* Baja las opciones un poco más */
+    margin-top: 150px; /* Baja las opciones un poco más */
+    
+}
+
+.option {
+    text-decoration: none;
+    color: #333;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.option img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #00796b;
+    transition: transform 0.3s ease-in-out;
+}
+
+.option h2 {
+    margin: 15px 0;
+    font-size: 1.2em;
+    color: #00796b;
+}
+
+.option:hover {
+    transform: scale(1.05);
+}
+
+.option:hover img {
+    transform: scale(1.1);
+}

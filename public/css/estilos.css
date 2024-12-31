@@ -1,0 +1,52 @@
+/* estilos.css */
+
+/* Fondo del cuerpo */
+body {
+    background-color: #d8d5d3; /* Un fondo claro */
+    padding-top: 20px;
+}
+
+/* Estilos para la cabecera de la página */
+.page-head {
+    margin-bottom: 100px;
+}
+
+/* Título de la página */
+.page-title h1 {
+    color: #0d0d0d; /* Color oscuro para el título */
+    font-weight: bold;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    background-color: #411fd8; /* Fondo claro para la navegación */
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* Estilos para las tarjetas */
+.card {
+    margin-bottom: 100px;
+    border: 1px solid #0d0368; /* Borde sutil */
+    border-radius: 5px;
+    transition: transform 0.1s; /* Animación de transformación */
+}
+
+.card:hover {
+    transform: scale(1.10); /* Escala al pasar el ratón por encima */
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #4800ff; /* Título de las tarjetas en azul */
+    font-weight: bold;
+}
+
+.card-text {
+    color: #090909; /* Texto de las tarjetas en gris */
+}
+
+.navbar-nav.ml-auto .nav-item .nav-link {
+    margin-right: 0;
+}
+
