@@ -19,7 +19,6 @@ $TipoDeAccesorios = new AccesoriosVehiculos();
     </head>
 
     <body>
-      
         <div class="container">
           <?php include_once './menu.php'; ?>
           <h1 class="text-center"> LISTA DE TIPOS DE ACCESORIOS </h1>

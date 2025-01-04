@@ -35,7 +35,7 @@
                     <p>2003</p>
                 </a>
             </div>
-            <div class="item">
+            <!--<div class="item">
                 <a href="inventario_de_vehiculos.php?codigo=2004" >
                     <img src="../public/images/vehiculos/2020.png" alt="Vehículo 3">
                     <p>2004</p>
@@ -59,7 +59,7 @@
                     <p>2007</p>
                 </a>
             </div>
-            <div class="item">
+             <div class="item">
                 <a href="inventario_de_vehiculos.php?codigo=2008" >
                     <img src="../public/images/vehiculos/2020.png" alt="Vehículo 3">
                     <p>2008</p>
@@ -136,7 +136,7 @@
                     <img src="../public/images/vehiculos/2020.png" alt="Vehículo 3">
                     <p>2020</p>
                 </a>
-            </div>
+            </div> -->
 
         </div>
 

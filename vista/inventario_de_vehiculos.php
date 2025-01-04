@@ -1,19 +1,7 @@
 <?php
   require_once '../modelo/datos_inventarioVehiculos.php';
   $inventarioVehiculos = new Inventario();
-
-  // Capturar el parámetro "codigo" de la URL
-  $codigoVehiculo = isset($_GET['codigo']) ? $_GET['codigo'] : null;
-
-  // Si no hay código en la URL, puedes manejarlo mostrando un mensaje o redirigiendo
-  if (!$codigoVehiculo) {
-    die('Código de vehículo no especificado.');
-  }
-
-  // Filtrar los datos por código
-  $respInventarioVehiculos = $inventarioVehiculos->verInventarioPorCodigo($codigoVehiculo);
 ?>
-
 
 <!DOCTYPE html>
 <html lang="es">
@@ -32,7 +20,7 @@
 
   <body>
     <div class="container">
-     <?php include_once './menu.php'; ?> 
+     <!-- <?php include_once './menu.php'; ?>  -->
       <h1 class="text-center"> VEHÍCULO-2014 </h1>
       <div class="table text-center"> <!-- capa -->
         <table class="table table-striped table-hover table-bordered"> <!-- celdas oscuras y claras -->
