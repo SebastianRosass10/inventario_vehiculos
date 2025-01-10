@@ -1,6 +1,20 @@
 <?php
   require_once '../modelo/datos_inventarioVehiculos.php';
+  // $inventarioVehiculos = new Inventario();
+
+  // Capturar el código del vehículo desde la URL
+  $codigo = isset($_GET['codigo']) ? $_GET['codigo'] : null;
+
   $inventarioVehiculos = new Inventario();
+
+  // Si hay un código, obtener solo los datos del vehículo correspondiente
+  if ($codigo) {
+      $respInventarioVehiculos = $inventarioVehiculos->verInventarioPorCodigo($codigo);
+  } else {
+      // Si no se pasa un código, mostrar todos los vehículos (opcional)
+      $respInventarioVehiculos = $inventarioVehiculos->verInventario();
+  }
+
 ?>
 
 <!DOCTYPE html>
@@ -51,7 +65,7 @@
           <tbody>
             <?php
             $cant = 1;  //sirve para el autoincremento del items
-            $respInventarioVehiculos = $inventarioVehiculos->verInventario();   //respuesta que voy a traer de la materia
+            // $respInventarioVehiculos = $inventarioVehiculos->verInventario();   //respuesta que voy a traer de la materia
             foreach ($respInventarioVehiculos as $equipo) {   //por cada resgistro que encuentre me vaya formando una fila
             ?>
               <tr>
