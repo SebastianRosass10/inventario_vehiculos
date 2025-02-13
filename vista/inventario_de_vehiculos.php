@@ -35,7 +35,8 @@
   <body>
     <div class="container">
      <!-- <?php include_once './menu.php'; ?>  -->
-      <h1 class="text-center"> VEHÍCULO-2014 </h1>
+      <!-- <h1 class="text-center"> VEHÍCULO-2014 </h1> -->
+      <h1 class="text-center">Vehículo - <?php echo $codigo; ?></h1>
       <div class="table text-center"> <!-- capa -->
         <table class="table table-striped table-hover table-bordered"> <!-- celdas oscuras y claras -->
           <thead>
@@ -58,6 +59,7 @@
               <th>Adicional</th>
               <th>Editar</th>
               <th>Eliminar</th>
+              <th>Inventario de Gabeta</th>
             </tr>
 
           </thead>
@@ -116,6 +118,14 @@
                           <i class="bi bi-trash"></i>
                       </button>
                     </td> 
+
+                    <td>
+                        <!-- Botón para redirigir a la vista de las gabetas -->
+                        <a href="vista_inventario_de_gabetas.php?id_vehiculos=<?php echo $vehiculos['id']; ?>" class="btn btn-info">
+                            <i class="bi bi-folder"></i>
+                        </a>
+                    </td>
+
               </tr>
             <?php  
               $cant++;    //autoincrementar la variable can

@@ -27,6 +27,7 @@
             <h2>Tipos de Herramientas</h2>
         </a>
     </div>
+
 </div>
 
 </body>

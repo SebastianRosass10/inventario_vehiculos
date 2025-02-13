@@ -1,3 +1,16 @@
+
+    <?php
+    session_start();
+    if (isset($_GET['qr']) && $_GET['qr'] == 1 && !isset($_SESSION["idUsuario"])) {
+        include "mini_login.php";
+        exit();
+    }
+
+    // Si hay sesión, eliminarla para que en el próximo escaneo vuelva a pedirse el login
+    unset($_SESSION["idUsuario"]);
+    session_destroy();
+    ?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
